@@ -1,0 +1,10 @@
+C:\Users\sc\Desktop\ZicZacZappp\ZicZacZappp\bin\Release\ZicZacZappp.exe
+C:\Users\sc\Desktop\ZicZacZappp\ZicZacZappp\bin\Release\ZicZacZappp.pdb
+C:\Users\sc\Desktop\ZicZacZappp\ZicZacZappp\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\sc\Desktop\ZicZacZappp\ZicZacZappp\obj\x86\Release\ZicZacZappp.Form1.resources
+C:\Users\sc\Desktop\ZicZacZappp\ZicZacZappp\obj\x86\Release\ZicZacZappp.Properties.Resources.resources
+C:\Users\sc\Desktop\ZicZacZappp\ZicZacZappp\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Users\sc\Desktop\ZicZacZappp\ZicZacZappp\obj\x86\Release\GenerateResource-ResGen.read.4.tlog
+C:\Users\sc\Desktop\ZicZacZappp\ZicZacZappp\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Users\sc\Desktop\ZicZacZappp\ZicZacZappp\obj\x86\Release\ZicZacZappp.exe
+C:\Users\sc\Desktop\ZicZacZappp\ZicZacZappp\obj\x86\Release\ZicZacZappp.pdb
