@@ -74,6 +74,20 @@ namespace ZicZacZappp.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Home {
+            get {
+                object obj = ResourceManager.GetObject("Home", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap HT {
+            get {
+                object obj = ResourceManager.GetObject("HT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap sheep {
             get {
                 object obj = ResourceManager.GetObject("sheep", resourceCulture);

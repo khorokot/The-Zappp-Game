@@ -18,7 +18,7 @@ namespace ZicZacZappp
 
         private void Playbt_Click(object sender, EventArgs e)
         {
-            //var myForm = new Bettle();
+
             string P1 = oneName.Text;
             int mode1 = 0;
             var battle = new Bettle(P1,P1,mode1);

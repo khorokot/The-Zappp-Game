@@ -20,18 +20,19 @@ namespace ZicZacZappp
         {
             var myForm = new Howto();
             myForm.Show();
+            this.Hide();
         }
 
         private void Onebt_Click(object sender, EventArgs e)
         {
-            var myForm = new OnePlayerName();
-            myForm.Show();
+            var myForm = new TwoPlayerName();
+            myForm.Show(); 
             this.Hide();
         }
 
         private void Twobt_Click(object sender, EventArgs e)
         {
-            var myForm = new TwoPlayerName();
+            var myForm = new PlayerNamemode2();
             myForm.Show();
             this.Hide();
         }

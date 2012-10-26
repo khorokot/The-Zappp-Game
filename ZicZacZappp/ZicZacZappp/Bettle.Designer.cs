@@ -58,7 +58,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Clip", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(78, 9);
+            this.label1.Location = new System.Drawing.Point(83, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(233, 34);
             this.label1.TabIndex = 0;
@@ -66,7 +66,7 @@
             // 
             // bt1
             // 
-            this.bt1.Location = new System.Drawing.Point(50, 54);
+            this.bt1.Location = new System.Drawing.Point(55, 53);
             this.bt1.Name = "bt1";
             this.bt1.Size = new System.Drawing.Size(90, 90);
             this.bt1.TabIndex = 1;
@@ -75,7 +75,7 @@
             // 
             // bt2
             // 
-            this.bt2.Location = new System.Drawing.Point(146, 54);
+            this.bt2.Location = new System.Drawing.Point(151, 53);
             this.bt2.Name = "bt2";
             this.bt2.Size = new System.Drawing.Size(90, 90);
             this.bt2.TabIndex = 2;
@@ -84,7 +84,7 @@
             // 
             // bt3
             // 
-            this.bt3.Location = new System.Drawing.Point(242, 54);
+            this.bt3.Location = new System.Drawing.Point(247, 53);
             this.bt3.Name = "bt3";
             this.bt3.Size = new System.Drawing.Size(90, 90);
             this.bt3.TabIndex = 3;
@@ -93,7 +93,7 @@
             // 
             // bt4
             // 
-            this.bt4.Location = new System.Drawing.Point(50, 150);
+            this.bt4.Location = new System.Drawing.Point(55, 149);
             this.bt4.Name = "bt4";
             this.bt4.Size = new System.Drawing.Size(90, 90);
             this.bt4.TabIndex = 4;
@@ -102,7 +102,7 @@
             // 
             // bt5
             // 
-            this.bt5.Location = new System.Drawing.Point(146, 150);
+            this.bt5.Location = new System.Drawing.Point(151, 149);
             this.bt5.Name = "bt5";
             this.bt5.Size = new System.Drawing.Size(90, 90);
             this.bt5.TabIndex = 5;
@@ -111,7 +111,7 @@
             // 
             // bt6
             // 
-            this.bt6.Location = new System.Drawing.Point(242, 150);
+            this.bt6.Location = new System.Drawing.Point(247, 149);
             this.bt6.Name = "bt6";
             this.bt6.Size = new System.Drawing.Size(90, 90);
             this.bt6.TabIndex = 6;
@@ -120,7 +120,7 @@
             // 
             // bt7
             // 
-            this.bt7.Location = new System.Drawing.Point(50, 246);
+            this.bt7.Location = new System.Drawing.Point(55, 245);
             this.bt7.Name = "bt7";
             this.bt7.Size = new System.Drawing.Size(90, 90);
             this.bt7.TabIndex = 7;
@@ -129,7 +129,7 @@
             // 
             // bt8
             // 
-            this.bt8.Location = new System.Drawing.Point(146, 246);
+            this.bt8.Location = new System.Drawing.Point(151, 245);
             this.bt8.Name = "bt8";
             this.bt8.Size = new System.Drawing.Size(90, 90);
             this.bt8.TabIndex = 8;
@@ -138,7 +138,7 @@
             // 
             // bt9
             // 
-            this.bt9.Location = new System.Drawing.Point(242, 246);
+            this.bt9.Location = new System.Drawing.Point(247, 245);
             this.bt9.Name = "bt9";
             this.bt9.Size = new System.Drawing.Size(90, 90);
             this.bt9.TabIndex = 9;
@@ -147,40 +147,44 @@
             // 
             // PlayerXsc
             // 
-            this.PlayerXsc.Location = new System.Drawing.Point(12, 384);
+            this.PlayerXsc.Location = new System.Drawing.Point(17, 383);
             this.PlayerXsc.Name = "PlayerXsc";
+            this.PlayerXsc.ReadOnly = true;
             this.PlayerXsc.Size = new System.Drawing.Size(35, 20);
             this.PlayerXsc.TabIndex = 10;
             // 
             // PlayerOsc
             // 
-            this.PlayerOsc.Location = new System.Drawing.Point(329, 384);
+            this.PlayerOsc.Location = new System.Drawing.Point(334, 383);
             this.PlayerOsc.Name = "PlayerOsc";
+            this.PlayerOsc.ReadOnly = true;
             this.PlayerOsc.Size = new System.Drawing.Size(35, 20);
             this.PlayerOsc.TabIndex = 11;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 389);
+            this.label2.Location = new System.Drawing.Point(58, 388);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "Player X";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(276, 389);
+            this.label3.Location = new System.Drawing.Point(281, 390);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 13;
             this.label3.Text = "Player O";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Reset
             // 
             this.Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.Reset.Location = new System.Drawing.Point(146, 360);
+            this.Reset.Location = new System.Drawing.Point(151, 359);
             this.Reset.Name = "Reset";
             this.Reset.Size = new System.Drawing.Size(90, 23);
             this.Reset.TabIndex = 14;
@@ -191,7 +195,7 @@
             // ResetSC
             // 
             this.ResetSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.ResetSC.Location = new System.Drawing.Point(130, 389);
+            this.ResetSC.Location = new System.Drawing.Point(135, 388);
             this.ResetSC.Name = "ResetSC";
             this.ResetSC.Size = new System.Drawing.Size(129, 25);
             this.ResetSC.TabIndex = 15;
@@ -202,18 +206,18 @@
             // msgStatus
             // 
             this.msgStatus.AllowDrop = true;
-            this.msgStatus.Location = new System.Drawing.Point(108, 429);
+            this.msgStatus.Location = new System.Drawing.Point(135, 425);
             this.msgStatus.Multiline = true;
             this.msgStatus.Name = "msgStatus";
             this.msgStatus.ReadOnly = true;
-            this.msgStatus.Size = new System.Drawing.Size(256, 20);
+            this.msgStatus.Size = new System.Drawing.Size(234, 20);
             this.msgStatus.TabIndex = 16;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nauvoo", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 431);
+            this.label4.Location = new System.Drawing.Point(12, 430);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 15);
             this.label4.TabIndex = 17;
@@ -222,7 +226,7 @@
             // bsh
             // 
             this.bsh.Image = global::ZicZacZappp.Properties.Resources.bs3;
-            this.bsh.Location = new System.Drawing.Point(12, 343);
+            this.bsh.Location = new System.Drawing.Point(17, 342);
             this.bsh.Name = "bsh";
             this.bsh.Size = new System.Drawing.Size(35, 35);
             this.bsh.TabIndex = 18;
@@ -231,7 +235,7 @@
             // wsh
             // 
             this.wsh.Image = global::ZicZacZappp.Properties.Resources.ws3;
-            this.wsh.Location = new System.Drawing.Point(329, 348);
+            this.wsh.Location = new System.Drawing.Point(334, 347);
             this.wsh.Name = "wsh";
             this.wsh.Size = new System.Drawing.Size(35, 35);
             this.wsh.TabIndex = 19;
@@ -264,8 +268,11 @@
             this.Controls.Add(this.bt2);
             this.Controls.Add(this.bt1);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(400, 500);
+            this.MinimumSize = new System.Drawing.Size(400, 500);
             this.Name = "Bettle";
             this.Text = "Battle";
+            this.Load += new System.EventHandler(this.Bettle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bsh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wsh)).EndInit();
             this.ResumeLayout(false);

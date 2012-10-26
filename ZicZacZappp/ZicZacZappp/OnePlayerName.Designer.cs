@@ -66,6 +66,7 @@
             // 
             // backsheep
             // 
+            this.backsheep.Image = global::ZicZacZappp.Properties.Resources.bs5;
             this.backsheep.Location = new System.Drawing.Point(34, 65);
             this.backsheep.Name = "backsheep";
             this.backsheep.Size = new System.Drawing.Size(50, 50);

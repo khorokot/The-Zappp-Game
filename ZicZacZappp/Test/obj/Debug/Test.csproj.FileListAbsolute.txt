@@ -1,0 +1,9 @@
+C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\Test\bin\Debug\Test.dll
+C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\Test\bin\Debug\ZicZacZappp.exe
+C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\Test\bin\Debug\ZicZacZappp.pdb
+C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\Test\bin\Debug\ZicZacZappp_Accessor.exe
+C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\Test\bin\Debug\ZicZacZappp_Accessor.pdb
+C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\Test\obj\Debug\Test.dll
+C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\Test\obj\Debug\Test.pdb
+C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\Test\bin\Debug\Test.pdb

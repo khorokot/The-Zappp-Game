@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="796c3384-a786-412a-9d3a-7bcc9837b699" name="sc@ROSSARIN-PC 2012-10-25 11:27:15" runUser="ROSSARIN-PC\sc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0572f25f-c57e-4c6e-9754-c1f826eec439">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="sc_ROSSARIN-PC 2012-10-25 11_27_15">
+      <DeploymentItem filename="C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\bin\Debug\ZicZacZappp.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-25T11:27:15.8163987+07:00" queuing="2012-10-25T11:27:15.8333996+07:00" start="2012-10-25T11:27:15.9174045+07:00" finish="2012-10-25T11:27:16.3914316+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestCheckForWin" storage="c:\users\sc\desktop\zzzfixed\ziczaczappp\test\bin\debug\test.dll" id="027f43f5-91ca-62d5-259f-a562ede63bf1">
+      <Execution id="5e9f49c1-d091-4b43-8096-5ac574230b2a" />
+      <TestMethod codeBase="C:/Users/sc/Desktop/ZZZFixed/ZicZacZappp/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UnitTest1, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCheckForWin" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="027f43f5-91ca-62d5-259f-a562ede63bf1" executionId="5e9f49c1-d091-4b43-8096-5ac574230b2a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5e9f49c1-d091-4b43-8096-5ac574230b2a" testId="027f43f5-91ca-62d5-259f-a562ede63bf1" testName="TestCheckForWin" computerName="ROSSARIN-PC" duration="00:00:00.1076218" startTime="2012-10-25T11:27:15.9424059+07:00" endTime="2012-10-25T11:27:16.3524293+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e9f49c1-d091-4b43-8096-5ac574230b2a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;False&gt;. Actual:&lt;True&gt;. </Message>
+          <StackTrace>   at Test.UnitTest1.TestCheckForWin() in C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\Test\UnitTest1.cs:line 18
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

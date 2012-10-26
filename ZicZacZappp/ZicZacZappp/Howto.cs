@@ -18,7 +18,11 @@ namespace ZicZacZappp
 
         private void Backbt_Click(object sender, EventArgs e)
         {
+            var myForm = new Home();
+            myForm.Show();
             this.Close();
+         
         }
-    }
+
+          }
 }

@@ -22,10 +22,10 @@ namespace ZicZacZappp
             string P1 = nameX.Text;
             string P2 = nameO.Text;
             int mode2 = 1;
+            this.Hide();
             var myForm = new Bettle(P1,P2,mode2);
             myForm.ShowDialog();
            // myForm.Show();
-            this.Hide();
         }
 
         private void Cancel_Click(object sender, EventArgs e)

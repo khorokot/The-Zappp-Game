@@ -54,7 +54,7 @@
             this.Onebt.Name = "Onebt";
             this.Onebt.Size = new System.Drawing.Size(124, 43);
             this.Onebt.TabIndex = 2;
-            this.Onebt.Text = "One Player";
+            this.Onebt.Text = "3 x 3";
             this.Onebt.UseVisualStyleBackColor = true;
             this.Onebt.Click += new System.EventHandler(this.Onebt_Click);
             // 
@@ -65,7 +65,7 @@
             this.Twobt.Name = "Twobt";
             this.Twobt.Size = new System.Drawing.Size(124, 43);
             this.Twobt.TabIndex = 3;
-            this.Twobt.Text = "Two Player";
+            this.Twobt.Text = "4 x 4";
             this.Twobt.UseVisualStyleBackColor = true;
             this.Twobt.Click += new System.EventHandler(this.Twobt_Click);
             // 
@@ -95,7 +95,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ZicZacZappp.Properties.Resources.sheep2;
+            this.BackgroundImage = global::ZicZacZappp.Properties.Resources.Home;
             this.ClientSize = new System.Drawing.Size(384, 462);
             this.Controls.Add(this.howtobt);
             this.Controls.Add(this.Exitbt);

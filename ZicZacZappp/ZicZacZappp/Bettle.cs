@@ -24,23 +24,25 @@ namespace ZicZacZappp
                 InitializeComponent();
                 initialStatus();
 
-                msgStatus.Text = "xxxxx";
+                msgStatus.Text = "แกะดำ เป็นฝ่ายเริ่มก่อนจร้าาาาา";
                 PlayerOsc.Text = scrO.ToString();
                 PlayerXsc.Text = scrX.ToString();
-                //label2.Text = P1;
+                label2.Text = P1;
+                label3.Text = "computer";
             }
             else if (mode == 1)
             {
                 InitializeComponent();
                 initialStatus();
 
-                msgStatus.Text = "xxxxx";
+                msgStatus.Text = "แกะดำ เป็นฝ่ายเริ่มก่อนจร้าาาาา";
                 PlayerOsc.Text = scrO.ToString();
                 PlayerXsc.Text = scrX.ToString();
                 label2.Text = P1;
                 label3.Text = P2;
             }
         }
+
         public void initialStatus()
         {
             for (int i = 0; i < 9; i++)
@@ -48,6 +50,7 @@ namespace ZicZacZappp
                 isClicked[i] = false;
             }
         }
+
         int scrX = 0;
         int scrO = 0;
 
@@ -60,28 +63,33 @@ namespace ZicZacZappp
         int counter = 0;
         string[] array = { "0", "0", "0", "0", "0", "0", "0", "0", "0" };
 
+        public int scoreAdd(int score)
+        {
+            score++;
+            return score;
+        }
 
         private void winnerX()
         {
-            //MessageBox.Show("Winner is X", "Winner", MessageBoxButton.OK, MessageBoxImage.Information);
-            msgStatus.Text = "Winner is X. Restart game !";
-            scrX++;
+            MessageBox.Show("Winner is Blacksheep ... Restart game!");
+            msgStatus.Text = "Winner is Blacksheep. Restart game !";
+            scrX = scoreAdd(scrX);
             PlayerXsc.Text = scrX.ToString();
         }
 
         private void winnerO()
         {
-            //MessageBox.Show("Winner is O", "Winner", MessageBoxButton.OK, MessageBoxImage.Information);
-            msgStatus.Text = "Winner is O. Restart game !";
-            scrO++;
+            MessageBox.Show("Winner is Whitesheep ... Restart game!");
+            msgStatus.Text = "Winner is Whitesheep. Restart game !";
+            scrO = scoreAdd(scrO);
             PlayerOsc.Text = scrO.ToString();
         }
 
         private void isDrawBattle()
         {
-            if ((counter == 9) && !(CheckForWin()))
+            if ((counter == 9) && !(CheckForWin(array)))
             {
-                //MessageBox.Show("Draw battle", "Winner", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Draw battle ... Restart game!");
                 msgStatus.Text = "Draw battle";
             }
 
@@ -100,23 +108,10 @@ namespace ZicZacZappp
             {
                 return;
             }
-           
-            if (X && (counter < 9))
+
+            if (O && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย X เล่นน๊าาาา";
-                bt1.Image = Image.FromFile("X.jpg");
-                array[botton] = "x";
-                X = false;
-                O = true;
-                if (!signal)
-                {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ O ย๊ะหล่อน";
-                }
-               
-            }
-            else if (O && (counter < 9))
-            {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย O เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะขาวเล่นจร้า";
                 bt1.Image = Image.FromFile("O.jpg");
                 array[botton] = "o";
                 O = false;
@@ -124,16 +119,30 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ X ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
+            else if (X && (counter < 9))
+            {
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะดำล่นจร้า";
+                bt1.Image = Image.FromFile("X.jpg");
+                array[botton] = "x";
 
+                O = true;
+                X = false;
+
+                if (!signal)
+                {
+                    msgStatus.Text = "!!!!";
+                }
+
+            }
             else return;
             counter++;
 
             isClicked[0] = true;
-            if (CheckForWin())
+            if (CheckForWin(array))
             {
                 return;
             }
@@ -145,11 +154,6 @@ namespace ZicZacZappp
         {
             int botton = 1;
 
-            if (signal)
-            {
-                return;
-            }
-
             if (isClicked[1])
             {
                 return;
@@ -157,7 +161,7 @@ namespace ZicZacZappp
 
             if (O && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย O เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะขาวเล่นจร้า";
                 bt2.Image = Image.FromFile("O.jpg");
                 array[botton] = "o";
                 O = false;
@@ -165,13 +169,13 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ X ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
             else if (X && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย X เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะดำเล่นจร้า";
                 bt2.Image = Image.FromFile("X.jpg");
                 array[botton] = "x";
 
@@ -180,16 +184,15 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ O ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
-
             else return;
             counter++;
 
             isClicked[1] = true;
-            if (CheckForWin())
+            if (CheckForWin(array))
             {
                 return;
             }
@@ -201,11 +204,6 @@ namespace ZicZacZappp
         {
             int botton = 2;
 
-            if (signal)
-            {
-                return;
-            }
-
             if (isClicked[2])
             {
                 return;
@@ -213,7 +211,7 @@ namespace ZicZacZappp
 
             if (O && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย O เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะขาวเล่นจร้า";
                 bt3.Image = Image.FromFile("O.jpg");
                 array[botton] = "o";
                 O = false;
@@ -221,13 +219,13 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ X ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
             else if (X && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย X เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะดำเล่นจร้า";
                 bt3.Image = Image.FromFile("X.jpg");
                 array[botton] = "x";
 
@@ -236,17 +234,16 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ O ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
-
             else return;
             counter++;
 
             isClicked[2] = true;
 
-            if (CheckForWin())
+            if (CheckForWin(array))
             {
                 return;
             }
@@ -258,11 +255,6 @@ namespace ZicZacZappp
         {
             int botton = 3;
 
-            if (signal)
-            {
-                return;
-            }
-
             if (isClicked[3])
             {
                 return;
@@ -270,7 +262,7 @@ namespace ZicZacZappp
 
             if (O && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย O เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะขาวเล่นจร้า";
                 bt4.Image = Image.FromFile("O.jpg");
                 array[botton] = "o";
                 O = false;
@@ -278,13 +270,13 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ X ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
             else if (X && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย X เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะดำเล่นจร้า";
                 bt4.Image = Image.FromFile("X.jpg");
                 array[botton] = "x";
 
@@ -293,16 +285,15 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ O ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
-
             else return;
             counter++;
 
             isClicked[3] = true;
-            if (CheckForWin())
+            if (CheckForWin(array))
             {
                 return;
             }
@@ -314,11 +305,6 @@ namespace ZicZacZappp
         {
             int botton = 4;
 
-            if (signal)
-            {
-                return;
-            }
-
             if (isClicked[4])
             {
                 return;
@@ -326,7 +312,7 @@ namespace ZicZacZappp
 
             if (O && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย O เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะขาวเล่นจร้า";
                 bt5.Image = Image.FromFile("O.jpg");
                 array[botton] = "o";
                 O = false;
@@ -334,13 +320,13 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ X ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
             else if (X && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย X เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะดำเล่นจร้า";
                 bt5.Image = Image.FromFile("X.jpg");
                 array[botton] = "x";
 
@@ -349,16 +335,15 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ O ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
-
             else return;
             counter++;
 
             isClicked[4] = true;
-            if (CheckForWin())
+            if (CheckForWin(array))
             {
                 return;
             }
@@ -370,11 +355,6 @@ namespace ZicZacZappp
         {
             int botton = 5;
 
-            if (signal)
-            {
-                return;
-            }
-
             if (isClicked[5])
             {
                 return;
@@ -382,7 +362,7 @@ namespace ZicZacZappp
 
             if (O && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย O เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะขาวเล่นจร้า";
                 bt6.Image = Image.FromFile("O.jpg");
                 array[botton] = "o";
                 O = false;
@@ -390,13 +370,13 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ X ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
             else if (X && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย X เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะดำเล่นจร้า";
                 bt6.Image = Image.FromFile("X.jpg");
                 array[botton] = "x";
 
@@ -405,16 +385,15 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ O ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
-
             else return;
             counter++;
 
             isClicked[5] = true;
-            if (CheckForWin())
+            if (CheckForWin(array))
             {
                 return;
             }
@@ -438,7 +417,7 @@ namespace ZicZacZappp
 
             if (O && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย O เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะขาวเล่นจร้า";
                 bt7.Image = Image.FromFile("O.jpg");
                 array[botton] = "o";
                 O = false;
@@ -446,13 +425,13 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ X ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
             else if (X && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย X เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะดำเล่นจร้า";
                 bt7.Image = Image.FromFile("X.jpg");
                 array[botton] = "x";
 
@@ -461,7 +440,7 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ O ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
@@ -470,7 +449,7 @@ namespace ZicZacZappp
             counter++;
 
             isClicked[6] = true;
-            if (CheckForWin())
+            if (CheckForWin(array))
             {
                 return;
             }
@@ -494,7 +473,7 @@ namespace ZicZacZappp
 
             if (O && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย O เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะขาวเล่นจร้า";
                 bt8.Image = Image.FromFile("O.jpg");
                 array[botton] = "o";
                 O = false;
@@ -502,13 +481,13 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ X ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
             else if (X && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย X เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะดำเล่นจร้า";
                 bt8.Image = Image.FromFile("X.jpg");
                 array[botton] = "x";
 
@@ -517,7 +496,7 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ O ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
@@ -526,7 +505,7 @@ namespace ZicZacZappp
             counter++;
 
             isClicked[7] = true;
-            if (CheckForWin())
+            if (CheckForWin(array))
             {
                 return;
             }
@@ -550,7 +529,7 @@ namespace ZicZacZappp
 
             if (O && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย O เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะขาวเล่นจร้า";
                 bt9.Image = Image.FromFile("O.jpg");
                 array[botton] = "o";
                 O = false;
@@ -558,13 +537,13 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ X ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
             else if (X && (counter < 9))
             {
-                msgStatus.Text = "ตอนนี้เป็นฝ่าย X เล่นน๊าาาา";
+                msgStatus.Text = "ต่อไปเป็นฝ่าย แกะดำเล่นจร้า";
                 bt9.Image = Image.FromFile("X.jpg");
                 array[botton] = "x";
 
@@ -573,7 +552,7 @@ namespace ZicZacZappp
 
                 if (!signal)
                 {
-                    msgStatus.Text = "ว๊ายยยยย เป็นตาของ O ย๊ะหล่อน";
+                    msgStatus.Text = "!!!!";
                 }
 
             }
@@ -582,7 +561,7 @@ namespace ZicZacZappp
             counter++;
 
             isClicked[8] = true;
-            if (CheckForWin())
+            if (CheckForWin(array))
             {
                 return;
             }
@@ -616,7 +595,7 @@ namespace ZicZacZappp
             msgStatus.Text = "reset score";
         }
 
-        private bool CheckForWin()
+        public bool CheckForWin(String[] array)
         {
             bool flag = false;
 
@@ -705,6 +684,16 @@ namespace ZicZacZappp
             return flag;
         }
 
+        private void Bettle_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            Environment.Exit(0);
+        }
 
     }
 }

@@ -54,3 +54,5 @@ C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\obj\x86\Debug\GenerateResou
 C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\bin\Debug\ZicZacZappp.pdb
 C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\obj\x86\Debug\ZicZacZappp.Home.resources
 C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\obj\x86\Debug\GenerateResource-ResGen.read.7.tlog
+C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\obj\x86\Debug\ZicZacZappp.Bettle4.resources
+C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\obj\x86\Debug\ZicZacZappp.PlayerNamemode2.resources
