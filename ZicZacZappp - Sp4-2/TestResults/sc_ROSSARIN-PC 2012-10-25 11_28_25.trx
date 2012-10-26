@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f63f2221-61ac-45b0-9cc5-375c6c8f4a69" name="sc@ROSSARIN-PC 2012-10-25 11:28:25" runUser="ROSSARIN-PC\sc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0572f25f-c57e-4c6e-9754-c1f826eec439">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="sc_ROSSARIN-PC 2012-10-25 11_28_25">
+      <DeploymentItem filename="C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\bin\Debug\ZicZacZappp.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-25T11:28:25.4653824+07:00" queuing="2012-10-25T11:28:28.6545648+07:00" start="2012-10-25T11:28:29.3236030+07:00" finish="2012-10-25T11:29:54.1714561+07:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="ROSSARIN-PC" outcome="Error" timestamp="2012-10-25T11:29:54.0674501+07:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestCheckForWin" storage="c:\users\sc\desktop\zzzfixed\ziczaczappp\test\bin\debug\test.dll" id="027f43f5-91ca-62d5-259f-a562ede63bf1">
+      <Execution id="4f21688d-0945-4f6d-a2ba-3085e75b2f63" />
+      <TestMethod codeBase="C:/Users/sc/Desktop/ZZZFixed/ZicZacZappp/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UnitTest1, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCheckForWin" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="027f43f5-91ca-62d5-259f-a562ede63bf1" executionId="4f21688d-0945-4f6d-a2ba-3085e75b2f63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4f21688d-0945-4f6d-a2ba-3085e75b2f63" testId="027f43f5-91ca-62d5-259f-a562ede63bf1" testName="TestCheckForWin" computerName="ROSSARIN-PC" duration="00:01:24.6588422" startTime="2012-10-25T11:28:29.5126139+07:00" endTime="2012-10-25T11:29:54.1714561+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f21688d-0945-4f6d-a2ba-3085e75b2f63">
+    </UnitTestResult>
+  </Results>
+</TestRun>

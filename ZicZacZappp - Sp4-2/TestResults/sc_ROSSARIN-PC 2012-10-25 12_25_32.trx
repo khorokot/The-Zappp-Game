@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7e6b3dfa-45ca-4239-bf2e-ab922013e2e1" name="sc@ROSSARIN-PC 2012-10-25 12:25:32" runUser="ROSSARIN-PC\sc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0572f25f-c57e-4c6e-9754-c1f826eec439">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="sc_ROSSARIN-PC 2012-10-25 12_25_32">
+      <DeploymentItem filename="C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\bin\Debug\ZicZacZappp.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-25T12:25:32.4702954+07:00" queuing="2012-10-25T12:25:32.5042974+07:00" start="2012-10-25T12:25:32.5553003+07:00" finish="2012-10-25T12:26:20.3350331+07:00" />
+  <ResultSummary outcome="Aborted">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CheckForWinTest" storage="c:\users\sc\desktop\zzzfixed\ziczaczappp\test\bin\debug\test.dll" id="a6467646-aa55-3ef1-3477-38adacaf9229">
+      <Execution id="a383ec42-b5f7-429b-863b-df0a750a95ad" />
+      <TestMethod codeBase="C:/Users/sc/Desktop/ZZZFixed/ZicZacZappp/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.BettleTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckForWinTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a6467646-aa55-3ef1-3477-38adacaf9229" executionId="a383ec42-b5f7-429b-863b-df0a750a95ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a383ec42-b5f7-429b-863b-df0a750a95ad" testId="a6467646-aa55-3ef1-3477-38adacaf9229" testName="CheckForWinTest" computerName="ROSSARIN-PC" duration="00:00:31.4748003" startTime="2012-10-25T12:25:32.5693011+07:00" endTime="2012-10-25T12:26:04.0441014+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a383ec42-b5f7-429b-863b-df0a750a95ad">
+      <Output>
+        <ErrorInfo>
+          <Message>User aborted test run.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
