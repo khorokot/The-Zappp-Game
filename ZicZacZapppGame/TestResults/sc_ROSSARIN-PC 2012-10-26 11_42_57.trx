@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d248f1a9-c251-4976-93bf-bcd5cd8baaac" name="sc@ROSSARIN-PC 2012-10-26 11:42:57" runUser="ROSSARIN-PC\sc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0572f25f-c57e-4c6e-9754-c1f826eec439">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="sc_ROSSARIN-PC 2012-10-26 11_42_57">
+      <DeploymentItem filename="C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\bin\Debug\ZicZacZappp.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-26T11:42:57.8880050+07:00" queuing="2012-10-26T11:42:58.8910623+07:00" start="2012-10-26T11:42:58.9130636+07:00" finish="2012-10-26T11:42:59.6091034+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CheckForWinTest1" storage="c:\users\sc\desktop\zzzfixed\ziczaczappp\test\bin\debug\test.dll" id="ea09c04b-a50d-c420-004d-7e4ff14fd8f4">
+      <Execution id="408b88b2-cdf7-4806-8a4c-a74b24be568a" />
+      <TestMethod codeBase="C:/Users/sc/Desktop/ZZZFixed/ZicZacZappp/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.Bettle4Test, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckForWinTest1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ea09c04b-a50d-c420-004d-7e4ff14fd8f4" executionId="408b88b2-cdf7-4806-8a4c-a74b24be568a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="408b88b2-cdf7-4806-8a4c-a74b24be568a" testId="ea09c04b-a50d-c420-004d-7e4ff14fd8f4" testName="CheckForWinTest1" computerName="ROSSARIN-PC" duration="00:00:00.1054793" startTime="2012-10-26T11:42:59.0020687+07:00" endTime="2012-10-26T11:42:59.5210984+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="408b88b2-cdf7-4806-8a4c-a74b24be568a">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Test.Bettle4Test.CheckForWinTest1 threw exception: 
+System.IO.FileNotFoundException: Please be sure a sound file exists at the specified location.</Message>
+          <StackTrace>    at System.Media.SoundPlayer.ValidateSoundFile(String fileName)
+   at System.Media.SoundPlayer.LoadAndPlay(Int32 flags)
+   at System.Media.SoundPlayer.Play()
+   at ZicZacZappp.Bettle4.winnerO() in C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\Bettle4.cs:line 76
+   at ZicZacZappp.Bettle4.CheckForWin(String[] array) in C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\Bettle4.cs:line 814
+   at Test.Bettle4Test.CheckForWinTest1() in C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\Test\Bettle4Test.cs:line 80
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

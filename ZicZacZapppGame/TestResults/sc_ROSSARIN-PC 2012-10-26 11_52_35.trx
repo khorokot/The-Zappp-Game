@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a7ccdca2-31c6-4b8a-ba8f-5f64fab1cb37" name="sc@ROSSARIN-PC 2012-10-26 11:52:35" runUser="ROSSARIN-PC\sc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0572f25f-c57e-4c6e-9754-c1f826eec439">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="sc_ROSSARIN-PC 2012-10-26 11_52_35">
+      <DeploymentItem filename="C:\Users\sc\Desktop\ZZZFixed\ZicZacZappp\ZicZacZappp\bin\Debug\ZicZacZappp.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-26T11:52:35.0020140+07:00" queuing="2012-10-26T11:52:35.8420620+07:00" start="2012-10-26T11:52:35.8910648+07:00" finish="2012-10-26T11:52:36.5611032+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CheckForWinTest2" storage="c:\users\sc\desktop\zzzfixed\ziczaczappp\test\bin\debug\test.dll" id="b9c93d36-7889-eb2c-51c0-451da1a92bdf">
+      <Execution id="c651cdd3-83d6-4ce1-af9b-8b7c8e666d7c" />
+      <TestMethod codeBase="C:/Users/sc/Desktop/ZZZFixed/ZicZacZappp/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.Bettle5Test, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckForWinTest2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b9c93d36-7889-eb2c-51c0-451da1a92bdf" executionId="c651cdd3-83d6-4ce1-af9b-8b7c8e666d7c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c651cdd3-83d6-4ce1-af9b-8b7c8e666d7c" testId="b9c93d36-7889-eb2c-51c0-451da1a92bdf" testName="CheckForWinTest2" computerName="ROSSARIN-PC" duration="00:00:00.1059930" startTime="2012-10-26T11:52:36.0920763+07:00" endTime="2012-10-26T11:52:36.5231010+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c651cdd3-83d6-4ce1-af9b-8b7c8e666d7c">
+    </UnitTestResult>
+  </Results>
+</TestRun>
